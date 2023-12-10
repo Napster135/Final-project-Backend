@@ -6,7 +6,7 @@
 Es un Carro de compras que contempla manejar roles de usuarios, productos, stock, carrito de compra y pasarelas de pago mediante Stripe. 
 - 🌱 👨‍💻 Usuario Premiun: **vic@mail.com**
 - 🤝 👨‍💻 Usuario Admin: **victorpacheco119@gmail.com**
-- 💬 👨‍💻 Usuario Normal: **vicR@mail.com**
+- 💬 👨‍💻 Usuario Normal: **vicr@mail.com**
 - 💬 Password para todos los user: **Qwerty123**
 
 
