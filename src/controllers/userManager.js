@@ -135,16 +135,16 @@ import {
   
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-          res.send({ status: "Error sending email:", error });
-        } else {
-          res.send({ status: "Email sent:", info });
+          console.error("Error sending email:", error);
+          return res.status(500).json({ message: "Error sending email", error });
         }
-      });
+   
       res.json({
         message:
           "Se ha enviado un correo electrónico con el código de restablecimiento",
         payload: newToken,
       });
+    });
     } catch (error) {
       console.error("Error al enviar el token:", error);
       return res.status(500).json({ message: "Error al enviar el token" });
