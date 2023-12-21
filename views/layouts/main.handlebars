@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/{{style}}" />
     <style>
       /* Estilo para el fondo negro del navbar */ .navbar { background-color:
-      #000; } /* Estilo para los enlaces de la izquierda */ .navbar-nav
+      #000 ;  /* Estilo para los enlaces de la izquierda */ .navbar-nav
       .nav-link { color: white; } /* Estilos personalizados solo a los enlaces
       de la izquierda */ .navbar-nav .nav-link:not(.btn) { background-color:
       #000000; padding: 10px 20px; } /* Estilos personalizados solo a los
@@ -24,12 +24,14 @@
     </style>
   </head>
 
+
+
   <body>
     {{#if user}}
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid" >
           <div
-            class="collapse navbar-collapse d-flex justify-content-between"
+            class="collapse navbar-collapse d-flex justify-content-between "
             id="navbarNav"
           >
             <ul class="navbar-nav">
@@ -40,13 +42,7 @@
                   href="/api/products"
                 >Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{url}}" id="cartLink">
-                  <img src="https://cdn-icons-png.flaticon.com/512/5465/5465801.png" alt="cart" width="30" height="30"/> 
-                  <span class="linkForm" id="cartQuantity"></span>
-                </a>
-              </li>
-
+              
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -82,9 +78,14 @@
                   <a class="nav-link" href="/api/docs">Doc's</a>
                 </li>
               {{/if}}
-
               <li class="nav-item">
-                <a class="nav-link" href="/auth/logout">Sign off</a>
+                <a class="nav-link" href="{{url}}" id="cartLink">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5465/5465801.png" alt="cart" width="30" height="30"/> 
+                  <span class="linkForm" id="cartQuantity"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/auth/logout">Logout</a>
               </li>
             </ul>
           </div>
